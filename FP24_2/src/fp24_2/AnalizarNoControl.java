@@ -12,26 +12,26 @@ import java.util.Scanner;
  */
 public class AnalizarNoControl {
 
-    public static void main(String[] args) {
-        String noControl = "s21121000";
-        
-        boolean imprimir = false;
-        if (noControl.charAt(5) != '0') {
-            System.out.print(noControl.charAt(5));
-            imprimir = true;
-        }
-        
-        if (noControl.charAt(6) != '0'  || imprimir) {
-            System.out.print(noControl.charAt(6));
-            imprimir = false;
-        }
-
-        if (noControl.charAt(7) != '0' ||imprimir) {
-            System.out.print(noControl.charAt(7));
-        }
-
-        System.out.println(noControl.charAt(8));
-    }
+//    public static void main(String[] args) {
+//        String noControl = "s21121000";
+//        
+//        boolean imprimir = false;
+//        if (noControl.charAt(5) != '0') {
+//            System.out.print(noControl.charAt(5));
+//            imprimir = true;
+//        }
+//        
+//        if (noControl.charAt(6) != '0'  || imprimir) {
+//            System.out.print(noControl.charAt(6));
+//            imprimir = true;
+//        }
+//
+//        if (noControl.charAt(7) != '0' ||imprimir) {
+//            System.out.print(noControl.charAt(7));
+//        }
+//
+//        System.out.println(noControl.charAt(8));
+//    }
 
     /*
     *Utiliza la clase wrapper(envoltorio) de int, que permite trabajar con los int 
@@ -43,17 +43,34 @@ public class AnalizarNoControl {
     *int->Integer
     *char->Character
      */
-//    public static void main(String[] args) {
-//        String noControl="s21120001";
-//        String strConsecutivo=""+noControl.charAt(5)+
-//                noControl.charAt(6)+
-//                noControl.charAt(7)+
-//                noControl.charAt(8);
-//        
-//        int consecutivo=Integer.parseInt(strConsecutivo);
-//        
-//        System.out.println(consecutivo);
-//    }
+    public static void main(String[] args) {
+        String noControl="s21120001";
+        int x;
+        double y=20;
+        
+        x=(int)y;
+        y=x;
+        //x=x+y;
+        x+=y;
+        
+        String strConsecutivo=""+noControl.charAt(5)+
+                noControl.charAt(6)+
+                noControl.charAt(7)+
+                noControl.charAt(8);
+        
+        /*
+        String strConsecutivo="";
+        strConsecutivo+=noControl.charAt(5)+
+                noControl.charAt(6)+
+                noControl.charAt(7)+
+                noControl.charAt(8);
+        */
+        
+        int consecutivo=Integer.parseInt(strConsecutivo);
+        //consecutivo=Integer.parseInt("A");
+        
+        System.out.println(consecutivo);
+    }
 /*
     Obtiene el consecutivo usando el mismo algoritmo que toma los caracteres
     y los convierte a su equivalente entero a través de la tabla ascii y lo genera
