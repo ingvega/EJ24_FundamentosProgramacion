@@ -40,8 +40,11 @@ public class Animales {
         
         if (clasificacion1.equals("vertebrado")) {
             if (clasificacion2.equals("ave")) {
+                
                 /*String resultado=clasificacion3.equals("carnivoro")?"aguia":"pomba";
                 System.out.println("El animal es " + resultado);*/
+                /*Cuando el operador ternario se coloca en una expresión donde hay mas operadores, deberá 
+                tenerse en consideración que este tiene una prioriad menor aún que la suma y resta, por lo*/
                 System.out.println("El animal es " + 
                         (clasificacion3.equals("carnivoro")?"aguia":"pomba")
                         );
