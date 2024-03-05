@@ -34,3 +34,4 @@ replay_pid*
 *.xml
 *.mf
 *.properties
+/FP24_3/nbproject/private/
